@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --main-text-color: rgb(255, 255, 255);
+  --second-text-color: rgb(54, 57, 69);
+  --third-text-color: rgb(156, 168, 183);
+  --link-text-color: #f18762;
+  font-family: Helvetica, sans-serif;
+}
+
+input::placeholder {
+  color: var(--third-text-color);
+}
+
+.form_section {
+  font-size: 18px;
+  background-color: rgb(62, 169, 245);
+  padding: 20px 0 150px 0;
+}
+
+.form_section .btn {
+  width: 555px;
+  padding: 20px;
+  color: var(--main-text-color);
+  background-color: #28d2d0;
+  border: none;
+  font-size: 1em;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.form_section .form_header {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 46px;
+}
+
+.form_section .form_link {
+  margin-top: -23px;
+}
+
+.form_section .form_link a {
+  text-decoration: none;
+  border: 1px solid var(--main-text-color);
+  color: var(--main-text-color);
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-right: 34px;
+}
+.form_section .form_wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 595px;
+  margin: 0 auto;
+  color: var(--main-text-color);
+  padding: 0 20px;
+  margin-top: 70px;
+}
+
+.form_section .form_wrapper .form_descr {
+  text-align: center;
+}
+
+.form_section .form_descr .form_title {
+  font-size: 2.33em;
+}
+
+.form_section .form_descr .form_subtitle {
+  margin-top: 9px;
+  font-size: 1em;
+  padding: 0 50px;
+  letter-spacing: 1px;
+  line-height: 27px;
+}
+
+.form_section .form_wrapper .form_input_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 14px;
+  margin-left: -20px;
+}
+
+.form_section .form_wrapper .form_input_wrapper > input {
+  width: calc(50% - 20px);
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  margin-left: 20px;
+}
+
+.form_section .form_wrapper .radio_input_wrap .radio_input_wrap_item {
+  margin-top: 20px;
+  border: 2px solid var(--main-text-color);
+  padding: 10px;
+}
+
+.form_section .form_wrapper .radio_input_wrap .radio_input_wrap_item label {
+  margin-left: 17px;
+}
+.form_section .form_wrapper .radio_input_wrap .radio_input_wrap_item p {
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+.form_section .form_wrapper .checkbox_wrap {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 0.83em;
+}
+
+.form_section .form_wrapper .checkbox_wrap label {
+  margin-left: 10px;
+}
+
+.form_section .form_wrapper .terms_of_serv {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.form_section .form_wrapper .terms_of_serv a {
+  color: var(--main-text-color);
+}
+
+.form_section .form_wrapper .sign_up_google {
+  padding: 10px;
+  color: var(--main-text-color);
+  background-color: #dd4b39;
+  position: relative;
+}
+
+.form_section .form_wrapper .sign_up_google::before {
+  content: "";
+  background: url("../img/google2.png") center center/cover no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 150px;
+}
+
+.faq {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1025px;
+  margin: 0 auto;
+  margin-top: 70px;
+  font-size: 1.15em;
+  padding: 20px;
+}
+
+.faq .column_item_wrapper {
+  width: 50%;
+  padding: 0 60px;
+}
+
+.faq .faq_wrap_item {
+  margin-top: 10px;
+}
+
+.faq .faq_wrap_item .question {
+  color: var(--second-text-color);
+}
+
+.faq .faq_wrap_item .answer {
+  color: var(--third-text-color);
+  margin-top: 10px;
+  line-height: 2em;
+}
+
+.faq .faq_wrap_item .answer p {
+  color: var(--third-text-color);
+  font-weight: 900;
+}
+
+.faq .faq_wrap_item .answer span {
+  color: var(--link-text-color);
+}
