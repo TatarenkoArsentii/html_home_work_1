@@ -36,21 +36,58 @@
               type="text"
               placeholder="First Name"
               id="First_name"
-              name="1"
+              name="First_name"
+              required
+              pattern="^([А-Я]{1}|[A-Z]{1})([a-z]|[а-я])*$"
             />
-            <input type="text" placeholder="Last Name" id="Last_name" />
-            <input type="text" placeholder="Display Name" id="Display_name" />
-            <input type="email" placeholder="Email Address" id="Email" />
-            <input type="password" placeholder="Password" id="Password" />
+            <input
+              type="text"
+              placeholder="Last Name"
+              id="Last_name"
+              name="Last_name"
+              required
+              pattern="^([А-Я]{1}|[A-Z]{1})([a-z]|[а-я])*$"
+            />
+            <input
+              type="text"
+              placeholder="Display Name"
+              id="Display_name"
+              name="Display_name"
+              required
+              pattern="^([А-Я]{1}|[A-Z]{1})([a-z]|[а-я])*$"
+            />
+            <input
+              type="email"
+              placeholder="Email Address"
+              id="Email"
+              name="Email"
+              required
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              id="Password"
+              name="Password"
+              required
+              pattern="^(?=.*\d.*\d)(?=.*[A-Z])(?=.*[@#$%^&+=]).{8,12}$"
+            />
             <input
               type="password"
               placeholder="Password Confirmation"
               id="Password_Confirmation"
+              name="Password_Confirmation"
+              required
+              pattern="^(?=.*\d.*\d)(?=.*[A-Z])(?=.*[@#$%^&+=]).{8,12}$"
             />
           </div>
           <div class="radio_input_wrap">
             <div class="radio_input_wrap_item">
-              <input type="radio" id="join_as_buyer" name="join_as" />
+              <input
+                type="radio"
+                id="join_as_buyer"
+                name="join_as"
+                value="buyer"
+              />
               <label for="join_as_buyer">
                 Join As a Buyer
                 <p>
@@ -60,7 +97,12 @@
               >
             </div>
             <div class="radio_input_wrap_item">
-              <input type="radio" id="join_as_creative" name="join_as" />
+              <input
+                type="radio"
+                id="join_as_creative"
+                name="join_as"
+                value="creative"
+              />
               <label for="join_as_creative">
                 Join As a Creative or Marketplace Seller
                 <p>
@@ -71,7 +113,12 @@
             </div>
           </div>
           <div class="checkbox_wrap">
-            <input type="checkbox" id="allow_squadhelp" />
+            <input
+              type="checkbox"
+              id="allow_squadhelp"
+              name="allow_squadhelp"
+              value="allow"
+            />
             <label for="allow_squadhelp"
               >Allow Squadhelp to send marketing/promotional offers from time to
               time</label
@@ -80,7 +127,10 @@
           <button id="create_accaunt" class="btn">Create account</button>
           <p class="terms_of_serv">
             By clicking this button, you agree to our
-            <a href="https://www.squadhelp.com/Terms&Conditions">
+            <a
+              href="https://www.squadhelp.com/Terms&Conditions"
+              target="_blank"
+            >
               Terms of Service.</a
             >
           </p>
